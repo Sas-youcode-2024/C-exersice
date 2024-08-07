@@ -1,24 +1,23 @@
 #include<stdio.h>
 
 int main() {
-   int C ;
-   float F ;
-   printf("veuillez saiser la température en Fahrenheit : ");
-   scanf("%f",&F);
+   char nom[20], prenom[20], sex ;
+   int age , numero ;
 
-   C = (F-32)/1.8 ;
+   printf("entrez votre nom ");
+   scanf("%s",&nom);
+   printf("entrez votre prenom ");
+   scanf("%s",&prenom);
+   printf("entrez votre sex ");
+   scanf(" %c",&sex);
+   printf("entrez votre age ");
+   scanf("%d",&age);
+   printf("entrez votre numero ");
+   scanf("%d",&numero);
 
-   if ( C<=0 ) {
-    printf("%d : tres froid ",C);
-   }
-   else if ( C>=0 && C<=15 ){
-    printf("%d : froid",C);
-   }
-   else if ( C>=15 && C<=30){
-    printf("%d : chaud",C);
-   }
-   else {
-    printf("%d : tres chaud",C);
-   }
+
+   printf("vos informations personnelles \n nom : %s \n prenome: %s \n sexe : %c \n age : %d \n numero de thelephone : %d",nom,prenom,sex,age,numero);
+
+
    return 0 ;
 }
